@@ -4,6 +4,8 @@ This is a toy project where I classified SMP2019 data and trained a model to pre
 # Task description
 The task here is to solve a classical supervised classification problem using Word2Vec/FastText with LSTM/GRU based neural network. There are 30 categories for different Chinese chat messages. My task is to freely explore different solutions and evaluate them using accuracies, precisions, and macro F1 score. 
 
+# To run:
+First, download https://osf.io/kxzfp. Set this file under the path specified by variable datadir. 
 
 # Method 1: Word Frequencies
 The first method I tried is to initialize each word vector by the word's frequency in the entire document. The word vectors are not great because it does not capture the meaning of the word. For example, it does not demonstrate the numerical similarities between words. To solve this, I added an Embedding layer in my network to try to capture the similarities while training the neural network.
